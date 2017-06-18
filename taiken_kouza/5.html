@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>タイトル</title>
+</head>
+
+<body>
+    <form action="">
+        <label>
+            あなたの名前:
+            <input type="text" name="txt" id="txt">
+        </label>
+        <input type="submit" onclick="return textbox()">
+    </form>
+    <script>
+        function textbox() {
+            var your_name = document.getElementById("txt").value;
+            alert("こんにちは！" + your_name + "さん！");
+            alert("ボクの名前は柿の種だよ！");
+
+            return false;
+        }
+    </script>
+</body>
+
+</html>
